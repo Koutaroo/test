@@ -99,8 +99,8 @@ img {
     z-index: 10;
 }
 #stalker2.active {
-    -webkit-transform: translate(-150%, -150%) scale(1.9);
-    transform: translate(-150%, -150%) scale(1.9);
+    -webkit-transform: translate(-180%, -150%) scale(1.9);
+    transform: translate(-180%, -150%) scale(1.9);
     transition: 8s;
     z-index: 10;
 }
@@ -111,8 +111,8 @@ img {
     z-index: 10;
 }
 #stalker4.active {
-    -webkit-transform: translate(-50%, -120%) scale(1.4);
-    transform: translate(50%, -120%) scale(1.4);
+    -webkit-transform: translate(-90%, -70%) scale(1.4);
+    transform: translate(-90%, -70%) scale(1.4);
     transition: 8s;
     z-index: 10;
 }
