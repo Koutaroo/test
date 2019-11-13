@@ -1,18 +1,164 @@
-*{
-	margin:0; padding:0;
+* {
+    margin: 0;
+    padding: 0;
     overscroll-behavior: none;
+        cursor: none;
 }
-html{
+
+html {
     background-color: #000;
 }
-.bg1{
+
+.bg1 {
     position: fixed;
-    width: 100%;
+    width: 100vw;
     z-index: 1;
 }
 
-img{
-    width: 100%;
+img {
+    width: 100vw;
     position: absolute;
     z-index: 2;
+}
+
+#cursor {
+    position: fixed;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: #e2803d;
+    width: 3vw;
+    height: 3vw;
+    opacity: 0.8;
+    border-radius: 100%;
+    pointer-events: none;
+    z-index: 10;
+}
+
+/*
+#cursor.active {
+    transform: scale(0);
+    z-index: 10;
+}
+*/
+
+#stalker {
+    position: fixed;
+    -webkit-transform: scale(1) translate(-50%, -50%);
+    transform: scale(1) translate(-50%, -50%);
+    width: 18vw;
+    height: 18vw;
+    transition: 7s;
+    pointer-events: none;
+    z-index: 10;
+}
+#stalker2 {
+    position: fixed;
+    -webkit-transform: scale(1) translate(-120%, -120%);
+    transform: scale(1) translate(-120%, -120%);
+    width: 18vw;
+    height: 18vw;
+    transition: 12s;
+    pointer-events: none;
+    z-index: 10;
+}
+#stalker3 {
+    position: fixed;
+    -webkit-transform: scale(1) translate(120%, 120%);
+    transform: scale(1) translate(120%, 120%);
+    width: 18vw;
+    height: 18vw;
+    transition: 11s;
+    pointer-events: none;
+    z-index: 10;
+}
+#stalker4 {
+    position: fixed;
+    -webkit-transform: scale(1) translate(-140%, 60%);
+    transform: scale(1) translate(-140%, 60%);
+    width: 18vw;
+    height: 18vw;
+    transition: 13s;
+    pointer-events: none;
+    z-index: 10;
+}
+#stalker5 {
+    position: fixed;
+    -webkit-transform: scale(1) translate(180%, -100%);
+    transform: scale(1) translate(180%, -100%);
+    width: 18vw;
+    height: 18vw;
+    transition: 14s;
+    pointer-events: none;
+    z-index: 10;
+}
+
+#stalker.active {
+    -webkit-transform: translate(50%, 50%) scale(1.9);
+    transform: translate(50%, 50%) scale(1.9);
+    transition: 8s;
+    z-index: 10;
+}
+#stalker2.active {
+    -webkit-transform: translate(-150%, -150%) scale(1.9);
+    transform: translate(-150%, -150%) scale(1.9);
+    transition: 8s;
+    z-index: 10;
+}
+#stalker3.active {
+    -webkit-transform: translate(50%, 70%) scale(1.9);
+    transform: translate(50%, 70%) scale(1.9);
+    transition: 8s;
+    z-index: 10;
+}
+#stalker4.active {
+    -webkit-transform: translate(-50%, -120%) scale(1.9);
+    transform: translate(50%, -120%) scale(1.9);
+    transition: 8s;
+    z-index: 10;
+}
+#stalker5.active {
+    -webkit-transform: translate(50%, 50%) scale(1.9);
+    transform: translate(50%, 50%) scale(1.9);
+    transition: 8s;
+    z-index: 10;
+}
+
+.hov1{
+    position: fixed;
+    margin-top: 5vw;
+    width: 100vw;
+    height: 14vw;
+/*    background-color: #fff;*/
+    z-index: 11;
+}
+.hov2{
+    position: fixed;
+    margin-top: 19vw;
+    width: 100vw;
+    height: 13vw;
+/*    background-color: #fff;*/
+    z-index: 11;
+}
+.hov3{
+    position: fixed;
+    margin-top: 32vw;
+    width: 100vw;
+    height: 14vw;
+/*    background-color: #fff;*/
+    z-index: 11;
+}
+.hov4{
+    position: fixed;
+    width: 23vw;
+    height: 100vw;
+/*    background-color: #fff;*/
+    z-index: 11;
+}
+.hov5{
+    position: fixed;
+    margin-left: 77vw;
+    width: 23vw;
+    height: 100vw;
+/*    background-color: #fff;*/
+    z-index: 11;
 }
