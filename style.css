@@ -27,9 +27,9 @@ img {
     transform: translate(-50%, -50%);
 /*     background: #e2803d; */
     background: #fff;
-    width: 5.5vw;
-    height: 5.5vw;
-    opacity: 0.3;
+    width: 4.7vw;
+    height: 4.7vw;
+    opacity: 0.95;
     border-radius: 100%;
     pointer-events: none;
     z-index: 10;
