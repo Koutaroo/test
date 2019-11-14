@@ -25,7 +25,8 @@ img {
     position: fixed;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    background: #e2803d;
+/*     background: #e2803d; */
+    background: #fff;
     width: 3vw;
     height: 3vw;
     opacity: 0.8;
