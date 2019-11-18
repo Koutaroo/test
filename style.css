@@ -6,7 +6,7 @@
 }
 
 html {
-    background-color: #000;
+    background-color: #004098;
 }
 
 .bg1 {
@@ -26,10 +26,10 @@ img {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 /*     background: #e2803d; */
-    background: #fff;
+    background: #000;
     width: 4.7vw;
     height: 4.7vw;
-    opacity: 0.95;
+    opacity: 0.65;
     border-radius: 100%;
     pointer-events: none;
     z-index: 10;
