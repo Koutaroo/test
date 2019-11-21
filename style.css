@@ -6,14 +6,15 @@
 }
 
 html {
-/*     background-color: #004098; */
-    background-color: #000;
+    background-color: #004098;
+/*    background-color: #000;*/
 }
 
 .bg1 {
     position: fixed;
-    width: 100vw;
-    opacity: 0.94;
+    margin-left: -11vw;
+    width: 155vw;
+    opacity: 0.8;
     z-index: 1;
 }
 
@@ -29,9 +30,10 @@ img {
     transform: translate(-50%, -50%);
 /*    background: #e2803d;*/
     background: #000;
-    width: 4.7vw;
-    height: 4.7vw;
+    width: 2.9vw;
+    height: 2.9vw;
     opacity: 0.65;
+/*    opacity: 0;*/
     border-radius: 100%;
     pointer-events: none;
     z-index: 20;
