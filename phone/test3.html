@@ -1,27 +1,56 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style3.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>test</title>
 </head>
+
 <body>
-      <a href="index.html" class="button-works">
+    <!--    <img src="%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%BC.png" class="wire">-->
+    <img src="top_sp_clear.svg" class="wire">
+    <video src="../mv2-b.mp4" class="bg1" loop autoplay muted></video>
+
+<!--
+    <div class="ball">
+        <img src="../img-b/ball5.png" class="ball1">
+        <img src="../img-b/ball2.png" class="ball2">
+        <img src="../img-b/ball3.png" class="ball3">
+        <img src="../img-b/ball3.png" class="ball4">
+    </div>
+-->
+
+    <!--
+    <a href="index.html" class="button-works">
    </a>
+-->
+
+    
+    <div class="menu">
+        <p class="top">TOP</p>
+        <p class="works">WORKS</p>
+        <p class="professor">PROFESSOR</p>
+    </div>
+
+    <div class="over"></div>
+    
+    
     <div class="hov1"></div>
     <div class="hov2"></div>
     <div class="hov3"></div>
-    <video src="" class="bg1" loop autoplay muted></video>
     <script>
         if (!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)) {
             $(function() {
                 var body = document.body;
-                var cursor = document.createElement("div");
+                //                var cursor = document.createElement("div");
+                var cursor = document.createElement("img");
                 var button_w = document.createElement("img");
                 var button_t = document.createElement("img");
                 var button_p = document.createElement("img");
-                button_w.setAttribute("src", "../img-b/ball.png");
+                cursor.setAttribute("src", "button-menu.png");
+                button_w.setAttribute("src", "../img-b/ball5.png");
                 button_t.setAttribute("src", "../img-b/ball2.png");
                 button_p.setAttribute("src", "../img-b/ball3.png");
                 cursor.id = "cursor";
@@ -33,31 +62,31 @@
                 body.appendChild(button_t);
                 body.appendChild(button_p);
                 body.addEventListener("mousemove", function(e) {
-                    if(e.clientX>innerWidth * 0.12 && e.clientX<innerWidth * 0.88){
-                    cursor.style.left = e.clientX + "px";
+                    if (e.clientX > innerWidth * 0.12 && e.clientX < innerWidth * 0.88) {
+                        cursor.style.left = e.clientX + "px";
                     }
-//                    cursor.style.top = e.clientY + "px";
-//                    button_w.style.left = e.clientX + "px";
-//                    button_w.style.top = e.clientY + "px";
+                    //                    cursor.style.top = e.clientY + "px";
+                    //                    button_w.style.left = e.clientX + "px";
+                    //                    button_w.style.top = e.clientY + "px";
                 }, false);
-                
-//                $("a").on("mouseenter", function() {
-//                    $('#cursor').addClass("active");
-//                });
-                 $(".hov1").on("mouseenter", function() {
+
+                //                $("a").on("mouseenter", function() {
+                //                    $('#cursor').addClass("active");
+                //                });
+                $(".hov1").on("mouseenter", function() {
                     $('#button_w').addClass("active");
                 });
-                 $(".hov2").on("mouseenter", function() {
+                $(".hov2").on("mouseenter", function() {
                     $('#button_t').addClass("active");
                 });
-                 $(".hov3").on("mouseenter", function() {
+                $(".hov3").on("mouseenter", function() {
                     $('#button_p').addClass("active");
                 });
-//                
-//                
-//                $("a").on("mouseleave", function() {
-//                    $('#cursor').removeClass("active");
-//                });
+                //                
+                //                
+                //                $("a").on("mouseleave", function() {
+                //                    $('#cursor').removeClass("active");
+                //                });
                 $(".hov1").on("mouseleave", function() {
                     $('#button_w').removeClass("active");
                 });
@@ -71,5 +100,7 @@
         }
 
     </script>
+
 </body>
+
 </html>
